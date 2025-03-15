@@ -53,7 +53,13 @@ public class Main {
         // Alimentacion 
          Alimentacion persona = new Persona();
         Alimentacion animal = new Alimentanimal();
-        
         persona.comer();  // Salida: La persona está comiendo con cubiertos.
         animal.comer();   // Salida: El animal está comiendo con sus patas.
+        
+        // Notificaciones 
+         Notificable correo = new CorreoElectronico();
+        Notificable sms = new SMS();
+        
+        correo.enviarNotificacion();
+        sms.enviarNotificacion();
 }}
