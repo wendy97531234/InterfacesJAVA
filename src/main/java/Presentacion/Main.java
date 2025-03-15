@@ -45,4 +45,8 @@ public class Main {
         Trabajador diseñador = new Diseñador();
         desarrollador.trabajar();
         diseñador.trabajar();
+        
+         // Pruebas de Ordenamiento
+        ListaNumeros lista = new ListaNumeros();
+        lista.ordenar(Arrays.asList(10012, 655411, 6589, 8512, 531249));
 }}
