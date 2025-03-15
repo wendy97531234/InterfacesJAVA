@@ -19,4 +19,12 @@ public class Main {
         perro.mover();
         gato.hacerSonido();
         gato.mover();
+        
+         // Pruebas de Vehiculos
+        Coche coche = new Coche();
+        Bicicleta bicicleta = new Bicicleta();
+        coche.arrancar();
+        coche.detener();
+        bicicleta.arrancar();
+        bicicleta.detener();
 }}
