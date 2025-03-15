@@ -27,4 +27,10 @@ public class Main {
         coche.detener();
         bicicleta.arrancar();
         bicicleta.detener();
+        
+          // Pruebas de Pagos
+        Pago pagoTarjeta = new PagoConTarjeta();
+        Pago pagoEfectivo = new PagoConEfectivo();
+        pagoTarjeta.procesarPago(1000);
+        pagoEfectivo.procesarPago(500);
 }}
