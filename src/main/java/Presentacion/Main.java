@@ -49,4 +49,11 @@ public class Main {
          // Pruebas de Ordenamiento
         ListaNumeros lista = new ListaNumeros();
         lista.ordenar(Arrays.asList(10012, 655411, 6589, 8512, 531249));
+        
+        // Alimentacion 
+         Alimentacion persona = new Persona();
+        Alimentacion animal = new Alimentanimal();
+        
+        persona.comer();  // Salida: La persona está comiendo con cubiertos.
+        animal.comer();   // Salida: El animal está comiendo con sus patas.
 }}
