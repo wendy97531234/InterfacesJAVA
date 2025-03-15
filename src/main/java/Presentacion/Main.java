@@ -39,4 +39,10 @@ public class Main {
         Rectangulo rectangulo = new Rectangulo(4,6);
         System.out.println("Área del círculo: " + circulo.area());
         System.out.println("Perímetro del rectángulo: " + rectangulo.perimetro());
+        
+        // Crear instancias de Desarrollador y Diseñador
+        Trabajador desarrollador = new Desarrollador();
+        Trabajador diseñador = new Diseñador();
+        desarrollador.trabajar();
+        diseñador.trabajar();
 }}
