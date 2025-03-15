@@ -75,4 +75,17 @@ public class Main {
         } else {
             System.out.println("Ambos productos tienen el mismo precio.");
         }
+        
+        //Descuento
+         Descontable descuentoPorcentaje = new DescuentoPorcentaje(8.8); // 20%
+        Descontable descuentoFijo = new DescuentoFijo(30); // $15
+        
+        double precioOriginal = 100.0;
+        
+        double precioConDescuentoPorcentaje = descuentoPorcentaje.calcularDescuento(precioOriginal);
+        double precioConDescuentoFijo = descuentoFijo.calcularDescuento(precioOriginal);
+        
+        System.out.println("Precio original: " + precioOriginal);
+        System.out.println("Precio con descuento porcentaje: " + precioConDescuentoPorcentaje);
+        System.out.println("Precio con descuento fijo: " + precioConDescuentoFijo);
 }}
