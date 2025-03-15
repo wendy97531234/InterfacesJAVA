@@ -62,4 +62,17 @@ public class Main {
         
         correo.enviarNotificacion();
         sms.enviarNotificacion();
+        
+        //Comparacion de productos
+        Producto producto1 = new Producto(1000.0);
+        Producto producto2 = new Producto(100.0);
+        
+        int resultado = producto1.comparar(producto2);
+        if (resultado < 0) {
+            System.out.println("El producto1 es más barato que el producto2.");
+        } else if (resultado > 0) {
+            System.out.println("El producto1 es más caro que el producto2.");
+        } else {
+            System.out.println("Ambos productos tienen el mismo precio.");
+        }
 }}
