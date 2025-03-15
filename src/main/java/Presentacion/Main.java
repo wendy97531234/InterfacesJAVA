@@ -33,4 +33,10 @@ public class Main {
         Pago pagoEfectivo = new PagoConEfectivo();
         pagoTarjeta.procesarPago(1000);
         pagoEfectivo.procesarPago(500);
+        
+        // Pruebas de Figuras Geométricas
+        Circulo circulo = new Circulo(5);
+        Rectangulo rectangulo = new Rectangulo(4,6);
+        System.out.println("Área del círculo: " + circulo.area());
+        System.out.println("Perímetro del rectángulo: " + rectangulo.perimetro());
 }}
